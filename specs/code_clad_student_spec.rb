@@ -1,24 +1,29 @@
 require( 'minitest/autorun')
 require( 'minitest/reporters')
 require_relative('../code_clan_student')
-Minitest::Reporters.use!
-Minitest::Reporters::SpecReporter.new
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
 
 class TestCodeClan_Student < MiniTest::Test
   def setup
-    @CodeClan_Student = CodeClan_Student.new("John","E37", 47)
+    @student = CodeClan_Student.new("John","E37", 47,)
   end
 
-  def test_codeclan_student
-    CodeClan_Student = BankAccount.new('Alice', 5000, 'business')
-    account.pay_monthly_fee
-    assert_equal(4950, account.balance)
+  def test_codeclan_student_name
+    # student_name = CodeClan_Student.new('John', "E37", 47)
+    assert_equal("John", @student.student_name)
   end
 
-  def test_pay_into_account
-    account = BankAccount.new('Alice', 5000, 'business')
-    account.pay_in(1000)
-    assert_equal(6000, account.balance)
+  def test_codeclan_student_cohort
+    # student_cohort = CodeClan_.new('John', "E37", 47)
+    assert_equal("E37", @student.student_cohort)
+  end
+
+  def test_student_can_talk
+    assert_equal("I can talk", @student.say_I_can_talk())
+  end
+
+  def test_favourite_programming_langauge
+    assert_equal("I like Ruby", @student.favourite_programming_langauge())
   end
 
   end

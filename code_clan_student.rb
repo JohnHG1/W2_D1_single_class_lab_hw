@@ -36,26 +36,29 @@
 # * Create a method that takes in whether the team has won or lost and updates the points property for a win. -->
 
 class CodeClan_Student
-  attr_accessor :student_name, :cohort, :age
+  attr_accessor :student_name, :student_cohort, :age
 
-
-  Class CodeClan_Student < MiniTest::Test
-
-    class CodeClan_Student
-      def initialize(input_student_name, input_cohort,  input_age)
+      def initialize(input_student_name, input_student_cohort,  input_age)
         @student_name = input_student_name
-        @cohort = input_cohort
-        @age = input_age
+        @student_cohort = input_student_cohort
+        @student_age = input_age
       end
-    end
+
 
     def student_name
       return @student_name
     end
 
-    def
-     return @cohort
+    def student_cohort
+      return @student_cohort
     end
 
+    def say_I_can_talk
+     return "I can talk"
+    end
+
+    def favourite_programming_langauge
+     return "I like Ruby"
+    end
 
 end
