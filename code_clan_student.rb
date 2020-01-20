@@ -57,8 +57,8 @@ class CodeClan_Student
      return "I can talk"
     end
 
-    def favourite_programming_langauge
-     return "I like Ruby"
+    def favourite_programming_langauge(language)
+     return "I like " + language
     end
 
 end

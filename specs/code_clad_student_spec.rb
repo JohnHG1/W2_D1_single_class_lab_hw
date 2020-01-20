@@ -23,7 +23,7 @@ class TestCodeClan_Student < MiniTest::Test
   end
 
   def test_favourite_programming_langauge
-    assert_equal("I like Ruby", @student.favourite_programming_langauge())
+    assert_equal("I like Ruby", @student.favourite_programming_langauge("Ruby"))
   end
 
   end
