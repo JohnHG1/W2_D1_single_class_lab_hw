@@ -39,6 +39,7 @@ class CodeClan_Student
   attr_accessor :student_name, :student_cohort, :age
 
       def initialize(input_student_name, input_student_cohort,  input_age)
+        
         @student_name = input_student_name
         @student_cohort = input_student_cohort
         @student_age = input_age
