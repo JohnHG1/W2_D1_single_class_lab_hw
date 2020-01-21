@@ -1,11 +1,13 @@
 class CodeClan_Sports_Team
-  attr_accessor :team_name, :players_name, :coach_name :points
+
+#attr_reader :team_name, :players_name,
+# attr_accessor :team_name, :players_name, :coach_name :total_points
 
       def initialize(team_name, players_name, coach_name, points)
         @team_name = team_name
         @players_name = player_name
         @coach_name = coach_name
-        @points = points
+        @total_points = 0
       end
 
 
@@ -14,11 +16,11 @@ class CodeClan_Sports_Team
   end
 
   # def number_of_players(players)
-  #      return player_name @player_name.count
+  #   return player_name @player_name.count
   # end
   #
   # def add_input_player_name(new_player)
-  #  new_player[:players_name].push(new_player)
+  #  return @player_name.push(new_player)
   # end
   #
   # def check_team_name(team_name)
@@ -27,11 +29,8 @@ class CodeClan_Sports_Team
   #
   # def check_player_name(player_name)
   #   for player in @player_name
-  #     if player == player_name
-  #       return player_name
-  #     end
+  #       return true if player_to_check_name ("Robin")
   #   end
-  #   return nil
   # end
   #
   # def find_player_by_name(player_name)
@@ -40,8 +39,14 @@ class CodeClan_Sports_Team
   #     end
   #       return nil
   #   end
+
+  # def can_get_points
+  #   return @total_points
+  # end
   #
-  #
+  # def has_won(win)
+  #   @total_points += 1 if win
+  # end
   #
 
 end
