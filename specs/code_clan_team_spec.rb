@@ -31,6 +31,8 @@ end
 #
 # def test_check_player_name
 #     assert_equal (true, @sports_team check_player_name ("Robin"))
+
+## return @player_name.include?(player_name)  some Ruby magic - very simple syntax
 # end
 #
 # def test_number_coddclan_team_players
@@ -45,7 +47,7 @@ end
 #   assert_equal(0, @total_points)
 # end
 
-def test_has_won__true
-  @total_points.points_update("win")
-  asset_equal(1, @total_points)
-# end
+# def test_has_won__true
+#   @total_points.points_update("win")
+#   asset_equal(1, @total_points)
+# # end
