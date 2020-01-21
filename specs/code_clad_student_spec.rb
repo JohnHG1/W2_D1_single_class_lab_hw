@@ -9,7 +9,7 @@ class TestCodeClan_Student < MiniTest::Test
   end
 
   def test_codeclan_student_name
-    # student_name = CodeClan_Student.new()
+    # student_name = CodeClan_Student.new('John', "E37", 47)
     assert_equal("John", @student.student_name)
   end
 
